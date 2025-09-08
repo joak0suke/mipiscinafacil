@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mi Piscina Fácil — Instrucciones y Guía</title>
+  <meta name="description" content="Guía clara para el mantenimiento de piscinas: seguridad, rutinas diarias y semanales, dosificación, solución de problemas y uso de la app Mi Piscina Fácil."/>
+  <meta property="og:title" content="Mi Piscina Fácil — Instrucciones y Guía">
+  <meta property="og:description" content="Seguridad, mantenimiento, dosificación y cómo usar la app.">
+  <meta property="og:type" content="article">
+  <meta name="theme-color" content="#0ea5e9">
+  <style>
+    :root{
+      --bg:#f8fbff;
+      --card:#ffffff;
+      --text:#0f172a;
+      --muted:#64748b;
+      --line:#e6eef7;
+      --link:#0ea5e9;
+      --ok:#065f46;
+      --ok-bg:#ecfdf5;
+      --ok-bdr:#a7f3d0;
+      --warn:#991b1b;
+      --warn-bg:#fee2e2;
+      --warn-bdr:#fecaca;
+      --chip:#1f2937;
+      --chip-bg:#e5e7eb;
+      --shadow: 0 8px 24px rgba(2,6,23,.06);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Helvetica,Arial,sans-serif}
+    a{color:var(--link);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:980px;margin:0 auto;padding:24px 16px 80px}
+    header{
+      position:sticky;top:0;z-index:5;background:rgba(255,255,255,.85);
+      backdrop-filter:saturate(180%) blur(12px);
+      border-bottom:1px solid var(--line)
+    }
+    .nav{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:12px 16px;max-width:980px;margin:0 auto}
+    .brand{font-weight:800;color:var(--text)}
+    .btn{
+      display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);
+      background:#fff;border-radius:999px;padding:8px 12px;color:var(--text);
+      box-shadow:var(--shadow);font-weight:700
+    }
+    h1{font-size:clamp(22px,4vw,32px);margin:18px 0 6px}
+    h2{font-size:clamp(18px,3vw,24px);margin:22px 0 10px}
+    h3{font-size:18px;margin:18px 0 8px}
+    .muted{color:var(--muted)}
+    .card{
+      background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0;box-shadow:var(--shadow)
+    }
+    .toc ol{margin:0;padding-left:20px}
+    .grid{display:grid;gap:12px}
+    @media(min-width:860px){ .grid.cols-2{grid-template-columns:1fr 1fr} }
+    .callout.ok{border:1px solid var(--ok-bdr);background:var(--ok-bg);border-radius:12px;padding:12px}
+    .callout.warn{border:1px solid var(--warn-bdr);background:var(--warn-bg);border-radius:12px;padding:12px}
+    .pill{display:inline-block;border-radius:999px;background:var(--chip-bg);color:var(--chip);padding:2px 10px;font-size:12px;font-weight:700;margin-left:8px}
+    .kbd{font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;background:#f1f5f9;border:1px solid #e2e8f0;border-bottom-width:2px;border-radius:6px;padding:2px 6px}
+    .inline-list{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0}
+    .note{font-size:13px;color:var(--muted)}
+    .footer{margin-top:32px;color:var(--muted);font-size:13px}
+    .section-anchor{scroll-margin-top:84px}
+    .hr{height:1px;background:var(--line);margin:14px 0}
+    .formula{font-family:ui-monospace,Consolas,monospace;background:#f8fafc;border:1px dashed #e2e8f0;border-radius:10px;padding:10px}
+    .list-clean{margin:0;padding-left:18px}
+    .tag{display:inline-block;border:1px solid var(--line);border-radius:8px;padding:4px 8px;font-size:12px;margin-right:6px;margin-top:6px}
+    .small{font-size:13px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">Mi Piscina Fácil</div>
+      <div class="inline-list">
+        <a class="btn" href="#indice">Índice</a>
+        <button class="btn" onclick="window.print()">🖨️ Imprimir</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1>Instrucciones de mantenimiento de piscina</h1>
+    <p class="muted">Guía práctica de seguridad, rutinas, dosificación y uso de la app <strong>Mi Piscina Fácil</strong>.</p>
+
+    <section id="indice" class="card toc section-anchor">
+      <h2>Índice</h2>
+      <ol>
+        <li><a href="#seguridad">Semáforo de seguridad para bañarse</a></li>
+        <li><a href="#medicion">Medición: qué, cómo y cada cuánto</a></li>
+        <li><a href="#rutinas">Rutinas de mantenimiento</a></li>
+        <li><a href="#quimicos">Guía rápida de químicos y dosificación</a></li>
+        <li><a href="#app">Cómo usar la app Mi Piscina Fácil</a></li>
+        <li><a href="#problemas">Solución de problemas comunes</a></li>
+        <li><a href="#faq">Preguntas frecuentes</a></li>
+        <li><a href="#glosario">Glosario</a></li>
+        <li><a href="#legal">Aviso y limitación de responsabilidad</a></li>
+      </ol>
+    </section>
+
+    <!-- SEGURIDAD -->
+    <section id="seguridad" class="card section-anchor">
+      <h2>1) Semáforo de seguridad para bañarse</h2>
+      <div class="grid cols-2">
+        <div class="callout warn">
+          <h3>🚫 PELIGRO — No bañarse</h3>
+          <ul class="list-clean">
+            <li>Cloro libre (<strong>FC</strong>) <strong>&ge; 10 ppm</strong> <span class="pill">Irritación</span></li>
+            <li><strong>pH</strong> &le; <strong>6,8</strong> o &ge; <strong>8,0</strong> <span class="pill">Corrosivo / baja eficacia</span></li>
+            <li><strong>CYA</strong> (estabilizador) <strong>&gt; 100 ppm</strong> <span class="pill">Cloro bloqueado</span></li>
+            <li>Agua verde o turbia intensa <span class="pill">Desinfección insuficiente</span></li>
+          </ul>
+        </div>
+        <div class="callout ok">
+          <h3>✅ Zonas recomendadas</h3>
+          <ul class="list-clean">
+            <li>FC: <strong>1–3 ppm</strong> (hasta 4 ppm puede molestar)</li>
+            <li>pH: <strong>7,2–7,8</strong> (ideal ~7,4)</li>
+            <li>CYA: <strong>30–50 ppm</strong></li>
+            <li>TA (alcalinidad): <strong>80–120 ppm</strong></li>
+          </ul>
+        </div>
+      </div>
+      <p class="note">Si estás fuera de rango, ajusta primero <strong>pH</strong> y <strong>FC</strong>. Con CYA alto, evita pastillas con estabilizador y renueva agua.</p>
+    </section>
+
+    <!-- MEDICION -->
+    <section id="medicion" class="card section-anchor">
+      <h2>2) Medición: qué, cómo y cada cuánto</h2>
+      <div class="grid cols-2">
+        <div>
+          <h3>Qué medir</h3>
+          <ul>
+            <li><strong>pH</strong>, <strong>FC</strong> (cloro libre) y <strong>TA</strong> (alcalinidad) — <em>básico</em></li>
+            <li><strong>CYA</strong> (estabilizador) — si usas tricloro/dicloro</li>
+            <li><strong>TC</strong> / <strong>CC</strong> (cloraminas) — opcional para diagnóstico</li>
+          </ul>
+          <h3>Frecuencia</h3>
+          <ul>
+            <li>Verano/uso alto: <strong>pH y FC, a diario</strong></li>
+            <li>Resto: 2–3 veces por semana</li>
+            <li>CYA: cada 2–4 semanas o tras renovar agua</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Cómo medir bien</h3>
+          <ul>
+            <li>Toma muestra a medio metro de profundidad, lejos de chorros</li>
+            <li>Evita medir a pleno sol (<span class="kbd">mañana</span> o <span class="kbd">tarde</span>)</li>
+            <li>Espera 30–45 min tras añadir químicos para re-medir</li>
+            <li>Registra resultados: te ayuda a dosificar mejor</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- RUTINAS -->
+    <section id="rutinas" class="card section-anchor">
+      <h2>3) Rutinas de mantenimiento</h2>
+      <div class="grid cols-2">
+        <div>
+          <h3>Diario</h3>
+          <ul>
+            <li>Revisa <strong>pH</strong> y <strong>FC</strong></li>
+            <li>Retira hojas y suciedad</li>
+            <li>Filtra <strong>6–8 h</strong> (verano)</li>
+          </ul>
+          <h3>Semanal</h3>
+          <ul>
+            <li>Cepilla paredes y fondo 1–2 veces</li>
+            <li>Limpia cestos skimmer/bomba</li>
+            <li>Contralava (si arena) según presión/manómetro</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Mensual</h3>
+          <ul>
+            <li>Comprueba <strong>TA</strong> y <strong>CYA</strong></li>
+            <li>Revisa equipo (fugas, ruidos, presión)</li>
+            <li>Planifica reposición parcial de agua si CYA sube</li>
+          </ul>
+          <div class="callout ok small">
+            Consejo: dosifica preferiblemente por la noche y con circulación activa.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUIMICOS -->
+    <section id="quimicos" class="card section-anchor">
+      <h2>4) Guía rápida de químicos y dosificación</h2>
+
+      <h3>Cloro (desinfectante)</h3>
+      <ul>
+        <li><strong>Hipoclorito cálcico 65%</strong> (cal-hypo) — <em>sin estabilizador</em></li>
+        <li><strong>Dicloro ~60%</strong> — rápido, <em>añade CYA</em></li>
+        <li><strong>Tricloro ~90%</strong> (pastillas) — lento, <em>añade CYA</em></li>
+        <li><strong>Hipoclorito sódico ~12–15%</strong> (líquido) — <em>sin CYA</em></li>
+      </ul>
+
+      <div class="formula">
+        <strong>Regla general de dosificación de cloro</strong><br>
+        Producto (g) ≈ <code>(ΔFC en ppm × Volumen(L) ÷ 1000) ÷ fracción de cloro activo</code><br>
+        <em>Ejemplo:</em> subir 2 ppm en 30.000 L con cal-hypo 65% ⇒ (2×30000/1000)/0.65 ≈ <strong>92 g</strong>.
+      </div>
+
+      <h3>Ajuste de pH</h3>
+      <ul>
+        <li><strong>Subir pH / TA</strong>: Bicarbonato sódico (además estabiliza el pH)</li>
+        <li><strong>Bajar pH</strong>: Ácido clorhídrico ~31% (manejo con guantes y gafas)</li>
+      </ul>
+
+      <h3>Estabilizador (CYA)</h3>
+      <div class="formula">
+        <strong>Regla práctica CYA</strong><br>
+        Para ácido cianúrico puro: ≈ <code>29 g × (ppm deseadas) × (Volumen / 30.000 L)</code><br>
+        Añade fraccionado y evita superar 50 ppm. Con CYA &gt; 100 ppm, renueva agua.
+      </div>
+
+      <div class="callout warn">
+        <strong>Importante:</strong> con CYA alto el cloro queda “bloqueado”. Evita tricloro/dicloro y usa cal-hypo o hipoclorito sódico hasta volver a 30–50 ppm.
+      </div>
+    </section>
+
+    <!-- APP -->
+    <section id="app" class="card section-anchor">
+      <h2>5) Cómo usar la app <em>Mi Piscina Fácil</em></h2>
+      <ol>
+        <li>Mide <strong>pH</strong>, <strong>FC</strong>, <strong>TA</strong> y <strong>CYA</strong> con tiras o kit.</li>
+        <li>Introduce <strong>volumen</strong> (L) y los valores medidos.</li>
+        <li>Elige tu <strong>producto de cloro</strong> (rápido, cal-hypo, pastillas o líquido).</li>
+        <li>Activa el “clicker” si el agua está <strong>verde</strong> o <strong>turbia</strong>.</li>
+        <li>Toca <strong>Calcular</strong>. Verás:
+          <ul>
+            <li>Un <strong>banner rojo</strong> si hay peligro para bañarse.</li>
+            <li>Un <strong>recuadro verde</strong> con las <strong>Instrucciones</strong> paso a paso (dosis y notas).</li>
+            <li>Recomendaciones generales y objetivos de pH/TA/CYA/FC.</li>
+          </ul>
+        </li>
+        <li>Puedes <strong>Guardar</strong> la entrada (historial limitado a 5) y <strong>Exportar</strong> un resumen.</li>
+      </ol>
+      <div class="inline-list">
+        <span class="tag">PELIGRO si: FC ≥ 10</span>
+        <span class="tag">PELIGRO si: pH ≤ 6,8 o ≥ 8,0</span>
+        <span class="tag">PELIGRO si: CYA &gt; 100</span>
+      </div>
+    </section>
+
+    <!-- PROBLEMAS -->
+    <section id="problemas" class="card section-anchor">
+      <h2>6) Solución de problemas comunes</h2>
+      <div class="grid cols-2">
+        <div>
+          <h3>Agua verde (algas)</h3>
+          <ol>
+            <li>Activa modo <strong>Agua verde</strong> en la app.</li>
+            <li>Aplica <strong>SHOCK</strong> según dosis calculada.</li>
+            <li><strong>Filtra 24 h</strong> continuas y <strong>cepilla</strong> paredes/fondo.</li>
+            <li>No bañarse hasta <strong>FC ≤ 5 ppm</strong> y agua clara.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Agua turbia</h3>
+          <ol>
+            <li>Activa <strong>Agua turbia</strong> en la app.</li>
+            <li>Verifica pH 7,2–7,6 y FC ≥ 2 ppm.</li>
+            <li><strong>Filtra 12 h</strong> y cepilla. Contralava si sube la presión.</li>
+            <li>No bañarse hasta aclarado y <strong>FC ≤ 5 ppm</strong>.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="hr"></div>
+      <div class="grid cols-2">
+        <div>
+          <h3>Cloraminas altas (mal olor / ojos)</h3>
+          <ul>
+            <li>CC = TC − FC. Mantén <strong>&lt; 0,5 ppm</strong></li>
+            <li>Si alta: shock suave + filtración continua</li>
+          </ul>
+        </div>
+        <div>
+          <h3>CYA alto</h3>
+          <ul>
+            <li>Evita productos con estabilizador</li>
+            <li>Renueva <strong>parcialmente</strong> el agua</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="card section-anchor">
+      <h2>7) Preguntas frecuentes</h2>
+      <h3>¿Qué filtro y cuántas horas?</h3>
+      <p>En verano, 6–8 h/día suele ser suficiente. Tras un shock: 24 h continuas.</p>
+
+      <h3>¿Puedo mezclar productos?</h3>
+      <p>No mezcles productos sólidos entre sí. Disuélvelos por separado y con la bomba en marcha.</p>
+
+      <h3>¿Por qué el cloro “no funciona” con CYA alto?</h3>
+      <p>El CYA estabiliza el cloro pero en exceso reduce su eficacia. Por encima de ~100 ppm el efecto desinfectante cae drásticamente; renueva agua.</p>
+    </section>
+
+    <!-- GLOSARIO -->
+    <section id="glosario" class="card section-anchor">
+      <h2>8) Glosario</h2>
+      <ul>
+        <li><strong>FC</strong>: Cloro libre, el que desinfecta</li>
+        <li><strong>TC</strong>: Cloro total</li>
+        <li><strong>CC</strong>: Cloraminas (TC − FC)</li>
+        <li><strong>TA</strong>: Alcalinidad total</li>
+        <li><strong>CYA</strong>: Ácido cianúrico (estabilizador)</li>
+      </ul>
+    </section>
+
+    <!-- LEGAL -->
+    <section id="legal" class="card section-anchor">
+      <h2>9) Aviso y limitación de responsabilidad</h2>
+      <p>Esta guía es educativa y orientativa. Sigue siempre las indicaciones del fabricante de tus productos y equipo. Usa guantes y gafas al manipular químicos. Mantén los productos fuera del alcance de niños y mascotas.</p>
+      <p class="note">Última actualización: <span id="lastUpdated">2025-09-08</span></p>
+    </section>
+
+    <p class="footer">
+      © Mi Piscina Fácil. Algunos enlaces pueden ser de afiliado. Gracias por apoyar el proyecto 🙌
+    </p>
+  </main>
+
+  <script>
+    // Actualiza fecha si quieres que muestre la de hoy automáticamente
+    // document.getElementById('lastUpdated').textContent = new Date().toISOString().slice(0,10);
+
+    // Añade # ancla al copiar título (UX opcional)
+    document.querySelectorAll('h2, h3').forEach(h => {
+      const id = h.parentElement.id;
+      if(id){
+        const a = document.createElement('a');
+        a.href = '#' + id; a.textContent = ' #';
+        a.style.opacity='0.35'; a.styletextDecoration='none';
+        a.onmouseenter = () => a.style.opacity='0.8';
+        a.onmouseleave = () => a.style.opacity='0.35';
+        h.appendChild(a);
+      }
+    });
+  </script>
+</body>
+</html>
